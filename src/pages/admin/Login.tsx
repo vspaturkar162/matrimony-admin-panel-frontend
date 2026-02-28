@@ -69,7 +69,7 @@ export default function Login() {
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-no-repeat bg-cover bg-center"
-    style={{ backgroundImage: "url('/backgroundLogin.png')" }}>
+    style={{ backgroundImage: `url(${process.env.PUBLIC_URL + "/download.jpg"})` }}>
     
       <div className=" from-gray-950 via-red-950 to-red-900 border-l-fuchsia-700 p-8 rounded-xl shadow-xl w-96">
         <img
