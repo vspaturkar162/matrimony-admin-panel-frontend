@@ -122,6 +122,8 @@ import SuperPaymentReport from "./pages/superAdmin/payments/PaymentReport";
 import SuperAdminSidebar from "./pages/superAdmin/SuperAdminSidebar";
 import MarriedProfiles from "./pages/admin/profiles/MarriedProfiles";
 import SuperMarriedProfiles from "./pages/superAdmin/profiles/MarriedProfiles";
+import ForgotPassword from "./pages/admin/ForgotPassword";
+import SuperForgotPassword from "./pages/superAdmin/SuperForgotPassword";
 
 function App() {
   const location = useLocation();
@@ -159,6 +161,7 @@ function App() {
               </ProtectedRoute>
             }
           />
+          <Route path="/admin/forgot-pass" element={<ForgotPassword />} />
           <Route path="/admin/dashboard" element={<Dashboard />} />
           <Route path="/admin/change-password" element={<ChangePassword />} />
           <Route path="/admin/admin-list" element={<AdminList />} />
@@ -191,7 +194,7 @@ function App() {
               </ProtectedRoute>
             }
           /> */}
-
+          <Route path="/super-admin/super-forgot-pass" element={<SuperForgotPassword />} />
           <Route path="/super-admin/super-dashboard" element={<SuperAdminDashboard />} />
           <Route path="/super-admin/admin-list" element={<AdminList />} />
           <Route path="/super-admin/activity-logs" element={<ActivityLogs />} />
