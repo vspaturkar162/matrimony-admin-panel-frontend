@@ -119,7 +119,7 @@ export default function UserDashboard() {
                     <span className="text-amber-300 font-semibold">5 unread messages</span> today.
                   </p>
                 </div>
-                <Link to="/user/user-matches">
+                <button onClick={() => navigate("/user/user-matches")}>
                     <motion.button
                         whileHover={{ scale: 1.04 }}
                         whileTap={{ scale: 0.97 }}
@@ -127,7 +127,7 @@ export default function UserDashboard() {
                     >
                         Explore Matches →
                     </motion.button>
-                    </Link>
+                    </button>
               </div>
             </div>
           </motion.div>

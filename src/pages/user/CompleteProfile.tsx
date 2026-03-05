@@ -24,7 +24,7 @@ export default function CompleteProfile() {
     abouteMe: "",
   });
 
-  const [photo, setPhoto] = useState<File | null>(null);
+  const [, setPhoto] = useState<File | null>(null);
   const [accepted, setAccepted] = useState(false);
 
   const handleChange = (

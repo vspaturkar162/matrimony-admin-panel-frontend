@@ -8,7 +8,7 @@ export default function Verification() {
   const [mobile, setMobile] = useState("");
   const [otp, setOtp] = useState("");
   const [aadhaar, setAadhaar] = useState("");
-  const [aadhaarFile, setAadhaarFile] = useState<File | null>(null);
+  const [, setAadhaarFile] = useState<File | null>(null);
   
 
   const handleSubmit = (e: React.FormEvent) => {
