@@ -28,7 +28,7 @@ export default function PhysicalLifestyle() {
 
   const handleNext = (e: React.FormEvent) => {
     e.preventDefault();
-    navigate("/family-details");
+    navigate("/user/family-details");
   };
 
   return (

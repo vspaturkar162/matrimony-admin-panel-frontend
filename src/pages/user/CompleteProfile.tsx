@@ -90,7 +90,7 @@ export default function CompleteProfile() {
               placeholder="Enter First Name"
               onChange={handleChange}
               className="p-2.5 border rounded-lg"
-              required
+              
             />
             <input
               type="text"
@@ -98,7 +98,7 @@ export default function CompleteProfile() {
               placeholder="Enter Last Name"
               onChange={handleChange}
               className="p-2.5 border rounded-lg"
-              required
+              
             />
           </div>
 
@@ -141,7 +141,7 @@ export default function CompleteProfile() {
               name="gender"
               onChange={handleChange}
               className="p-2.5 border rounded-lg"
-              required
+              
             >
               <option value="">Select Gender</option>
               <option>Male</option>
@@ -154,7 +154,7 @@ export default function CompleteProfile() {
               name="education"
               onChange={handleChange}
               className="p-2.5 border rounded-lg"
-              required
+              
             />
           </div>
 

@@ -30,7 +30,7 @@ export default function FamilyDetails() {
 
   const handleNext = (e: React.FormEvent) => {
     e.preventDefault();
-    navigate("/verification");
+    navigate("/user/verification");
   };
 
   return (
