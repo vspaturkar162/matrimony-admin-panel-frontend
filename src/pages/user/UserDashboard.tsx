@@ -1,95 +1,3 @@
-// import { motion } from "framer-motion";
-// import UserNavbar from "../../components/user/UserNavbar";
-// import Footer from "../../components/user/Footer";
-// import Sponsors from "../../components/user/Sponsors";
-
-// const profiles = [
-//   {
-//     id: 1,
-//     name: "Aarav Sharma",
-//     age: 28,
-//     city: "Mumbai",
-//     image: "/hero2.PNG",
-//   },
-//   {
-//     id: 2,
-//     name: "Priya Verma",
-//     age: 26,
-//     city: "Pune",
-//     image: "/hero3.PNG",
-//   },
-//   {
-//     id: 3,
-//     name: "Rohan Mehta",
-//     age: 30,
-//     city: "Delhi",
-//     image: "/hero4.PNG",
-//   },
-// ];
-
-// export default function UserDashboard() {
-//   return (
-//     <>
-//       <div className="min-h-screen bg-gradient-to-b from-[#fff8f0] to-[#fdf1e6]">
-//         <UserNavbar />
-
-//         <div className="max-w-7xl mx-auto px-6 py-16">
-
-//           {/* Welcome Section */}
-//           <motion.div
-//             initial={{ opacity: 0, y: 30 }}
-//             animate={{ opacity: 1, y: 0 }}
-//             className="mb-12 text-center"
-//           >
-//             <h2 className="text-4xl md:text-5xl font-bold text-red-700 mb-4">
-//               Welcome to ShubVivah
-//             </h2>
-//             <p className="text-lg text-gray-600">
-//               Discover meaningful connections with verified profiles.
-//             </p>
-//           </motion.div>
-
-//           {/* Profiles Grid */}
-//           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-//             {profiles.map((profile) => (
-//               <motion.div
-//                 key={profile.id}
-//                 whileHover={{ scale: 1.05 }}
-//                 className="bg-white rounded-3xl shadow-xl overflow-hidden border border-yellow-200"
-//               >
-//                 <img
-//                   src={profile.image}
-//                   alt={profile.name}
-//                   className="w-full h-64 object-cover"
-//                 />
-
-//                 <div className="p-6 text-center">
-//                   <h3 className="text-2xl font-semibold text-red-600">
-//                     {profile.name}
-//                   </h3>
-//                   <p className="text-gray-600 mt-2">
-//                     {profile.age} yrs • {profile.city}
-//                   </p>
-
-//                   <button
-//                     className="mt-4 px-6 py-2 bg-gradient-to-r
-//                     from-red-700 via-red-500 to-red-400 text-white
-//                     rounded-full shadow-lg hover:scale-105 transition"
-//                   >
-//                     View Profile
-//                   </button>
-//                 </div>
-//               </motion.div>
-//             ))}
-//           </div>
-            
-//         </div>
-//       </div>
-//         <Sponsors/>
-//       <Footer />
-//     </>
-//   );
-// }
 
 import { motion } from "framer-motion";
 import { Link, useNavigate } from "react-router-dom";
@@ -100,7 +8,7 @@ import ProfileCard from "../../components/user/ProfileCard";
 import SuggestedProfiles from "../../components/user/SuggestedProfiles";
 import Footer from "../../components/user/Footer";
 import Sponsors from "../../components/user/Sponsors";
-import { Sparkles, SlidersHorizontal } from "lucide-react";
+import { Sparkles } from "lucide-react";
 
 const profiles = [
   {

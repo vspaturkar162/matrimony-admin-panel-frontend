@@ -3,7 +3,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import UserNavbar from "../../components/user/UserNavbar";
 import Footer from "../../components/user/Footer";
-import Sponsors from "../../components/user/Sponsors";
+
 import { motion } from "framer-motion";
 
 export default function UserLogin() {

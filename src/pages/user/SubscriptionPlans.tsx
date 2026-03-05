@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import UserNavbar from "../../components/user/UserNavbar";
+
 import Footer from "../../components/user/Footer";
 import UserDashboardNavbar from "../../components/user/UserDashboardNavbar";
 

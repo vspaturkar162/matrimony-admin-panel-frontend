@@ -14,7 +14,6 @@ import {
   LogOut,
   Crown,
   X,
-  Search,
   Menu,
 } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";

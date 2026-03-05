@@ -1,36 +1,4 @@
-// import UserNavbar from "../../components/user/UserDashboardNavbar";
-// import Footer from "../../components/user/Footer";
 
-// export default function UserMessages() {
-//   const chats = [
-//     { name: "Priya Verma", msg: "Hi! I liked your profile 😊" },
-//     { name: "Aarav Sharma", msg: "Are you from Mumbai?" },
-//   ];
-
-//   return (
-//     <>
-//       <UserNavbar />
-//       <div className="min-h-screen pt-[100px] bg-gradient-to-br from-[#fff8f0] to-[#fef1e6] px-6">
-//         <div className="max-w-5xl mx-auto bg-white p-8 rounded-3xl shadow-xl border border-amber-100">
-//           <h1 className="text-3xl font-bold text-red-800 mb-6 font-serif">
-//             💬 Your Inbox
-//           </h1>
-
-//           {chats.map((chat, index) => (
-//             <div
-//               key={index}
-//               className="p-4 border-b border-gray-100 hover:bg-amber-50 rounded-lg transition cursor-pointer"
-//             >
-//               <h3 className="font-semibold text-gray-800">{chat.name}</h3>
-//               <p className="text-sm text-gray-500">{chat.msg}</p>
-//             </div>
-//           ))}
-//         </div>
-//       </div>
-//       <Footer />
-//     </>
-//   );
-// }
 
 import { useState } from "react";
 import UserNavbar from "../../components/user/UserDashboardNavbar";
@@ -86,6 +54,7 @@ export default function UserMessages() {
                 <img
                   src={user.avatar}
                   className="w-10 h-10 rounded-full object-cover"
+                  alt={user.name}
                 />
 
                 <span className="font-medium text-gray-700">
@@ -103,6 +72,7 @@ export default function UserMessages() {
               <img
                 src={activeChat.avatar}
                 className="w-10 h-10 rounded-full"
+                alt={activeChat.name}
               />
               <h2 className="font-semibold">{activeChat.name}</h2>
             </div>
