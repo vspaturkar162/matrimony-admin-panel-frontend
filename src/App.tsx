@@ -124,6 +124,26 @@ import MarriedProfiles from "./pages/admin/profiles/MarriedProfiles";
 import SuperMarriedProfiles from "./pages/superAdmin/profiles/MarriedProfiles";
 import ForgotPassword from "./pages/admin/ForgotPassword";
 import SuperForgotPassword from "./pages/superAdmin/SuperForgotPassword";
+import Home from "./pages/user/Home";
+import UserLogin from "./pages/user/Login";
+import CompleteProfile from "./pages/user/CompleteProfile";
+import Help from "./pages/user/Help";
+import Verification from "./pages/user/Verification";
+import FamilyDetails from "./pages/user/FamilyDetails";
+import PhysicalLifestyle from "./pages/user/PhysicalLifestyle";
+import ProfileSuccess from "./pages/user/ProfileSuccess";
+import UserDashboard from "./pages/user/UserDashboard";
+import SubscriptionPlans from "./pages/user/SubscriptionPlans";
+import ViewProfile from "./pages/user/ViewProfile";
+import Filters from "./pages/user/Filters";
+import UserMatches from "./pages/user/Matches";
+import UserProfile from "./pages/user/UserProfile";
+import UserMessages from "./pages/user/UserMessages";
+import UserNotifications from "./pages/user/UserNotifications";
+import Account from "./pages/user/Account";
+import Privacy from "./pages/user/Privacy";
+import Shortlisted from "./pages/user/Shortlisted";
+import EditPreferences from "./pages/user/EditPreferences";
 
 function App() {
   const location = useLocation();
@@ -216,6 +236,28 @@ function App() {
           <Route path="/super-admin/analytics" element={<SuperAnalytics />} />
           <Route path="/super-admin/notifications" element={<SuperNotifications />} />
           <Route path="/super-admin/change-password" element={<SuperAdminChangePassword />} />
+          
+          <Route path="/user/matrimony-home" element={<Home />} />
+          <Route path="/user/login" element={<UserLogin />} />
+          <Route path="/user/complete-profile" element={<CompleteProfile />} />
+          <Route path="/user/physical-lifestyle" element={<PhysicalLifestyle />} />
+          <Route path="/user/family-details" element={<FamilyDetails />} />
+          <Route path="/user/verification" element={<Verification />} />    
+          <Route path="/user/help" element={<Help />} />
+          <Route path="/user/profile-success" element={<ProfileSuccess />} />
+          <Route path="/user/user-dashboard" element={<UserDashboard />} />
+          <Route path="/user/subscription" element={<SubscriptionPlans />} />
+
+          <Route path="/user/user-matches" element={<UserMatches />} />
+          <Route path="/user/filters" element={<Filters />} />
+          <Route path="/user/profile/:id" element={<ViewProfile />} />
+          <Route path="/user/shortlisted" element={<Shortlisted />} />
+          <Route path="/user/privacy" element={<Privacy />} />
+          <Route path="/user/account" element={<Account />} />
+          <Route path="/user/user-notifications" element={<UserNotifications />} />
+          <Route path="/user/user-messages" element={<UserMessages />} />
+          <Route path="/user/profile" element={<UserProfile />} />    
+          <Route path="/user/edit-preferences" element={<EditPreferences />} />
         </Routes>
       </div>
     </div>
